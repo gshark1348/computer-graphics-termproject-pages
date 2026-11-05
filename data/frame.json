@@ -1,0 +1,89 @@
+{
+  "type": "frame_begin",
+  "frame_id": 0,
+  "timestamp_seconds": 0.0,
+  "coordinate_frame": "world_first_left_camera",
+  "position_unit": "metre",
+  "pose_applied": true,
+  "observation_camera": "current custom-rectified left camera",
+  "image_size": [
+    621,
+    188
+  ],
+  "K_rect": [
+    [
+      361.2498751333333,
+      0.0,
+      310.0
+    ],
+    [
+      0.0,
+      361.2498751333333,
+      93.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "baseline_m": 0.5327190420453419,
+  "T_world_from_observation_camera": [
+    [
+      0.999986647241228,
+      0.005167633845524299,
+      -2.9994772820656615e-05,
+      2.0122792321330962e-16
+    ],
+    [
+      -0.005167633843199604,
+      0.9999866476910771,
+      1.5500407288223767e-07,
+      0.0
+    ],
+    [
+      2.9995173325608243e-05,
+      -6.74934867906167e-19,
+      0.9999999995501448,
+      2.220446049250313e-16
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_world_from_observation_camera_column_major": [
+    0.999986647241228,
+    -0.005167633843199604,
+    2.9995173325608243e-05,
+    0.0,
+    0.005167633845524299,
+    0.9999866476910771,
+    -6.74934867906167e-19,
+    0.0,
+    -2.9994772820656615e-05,
+    1.5500407288223767e-07,
+    0.9999999995501448,
+    0.0,
+    2.0122792321330962e-16,
+    0.0,
+    2.220446049250313e-16,
+    1.0
+  ],
+  "surface_schema": "SRF1",
+  "surface_valid": 26088,
+  "point_count": 39983,
+  "total_map_points": 39983,
+  "first_point_id": 0,
+  "chunk_count": 10,
+  "processing_seconds": 9.165876125451177,
+  "matching_seconds": 1.5510399579070508,
+  "matching_points": 95653,
+  "input_points": 72312,
+  "within_frame_voxels": 39983,
+  "new_points": 39983,
+  "duplicate_existing_voxels": 0,
+  "map_points": 39983
+}

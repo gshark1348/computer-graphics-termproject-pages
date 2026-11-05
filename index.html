@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>스테레오 표면 렌더러</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#13191c;color:#ecf0ea;font:16px system-ui}main{max-width:1400px;margin:auto;padding:4vw}h1{font-size:clamp(24px,4vw,48px);margin:.4em 0}canvas{display:block;width:100%;background:#0b1014;touch-action:none}section{display:flex;flex-wrap:wrap;gap:.7em;align-items:center;margin:1em 0}button,select,input{font:inherit}button,select{padding:.45em;border-radius:5px}small{color:#a6beb7}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script>
+<main><small>STEREO LAB / B</small><h1>스테레오 표면 렌더러</h1>
+<section><label>표시 <select id="mode"><option value="0">RGB 점</option><option value="1">표면 법선</option><option value="2">RGB splat</option><option selected value="3">조명 splat</option></select></label>
+<button id="play">일시정지</button><button id="reset">카메라 초기화</button>
+<label>재생 시간 <input id="time" type="range" min="0" max="10" step=".01" value="0"> <output id="clock">0.00초</output></label></section>
+<section><label><input id="paint" type="checkbox"> 페인트 연출</label><label>방식 <select id="style"><option value="brush">붓질</option><option value="gun">페인트총</option></select></label><button data-time="2.7">초반</button><button data-time="4.3">중간</button><button data-time="10">완성</button></section>
+<section><button id="shadowDemo">도로 위 한 발 · 착지 직전</button>
+<label><input type="checkbox" id="shadow" checked> 입자 그림자</label>
+<label>광원 위상 <input type="range" id="lightOffset" min="-180" max="180" value="0"> </label></section>
+<section aria-label="표면 효과">
+<label><input type="checkbox" id="expand"> 고정 배율 확대</label>
+<label>반경 <input id="scale" type="range" min="1" max="3" step=".1" value="1.5" disabled> <output id="factor">1.5×</output></label>
+<label><input id="adaptive" type="checkbox"> 주변 간격 기반 반경</label>
+<label>보정 강도 <input id="strength" type="range" min="0" max="100" step="1" value="100" disabled> <output id="amount">100%</output></label>
+<label><input id="blend" type="checkbox"> 다중 패스 블렌딩</label>
+<label><input id="edl" type="checkbox"> 깊이 윤곽 (EDL)</label></section>
+<canvas></canvas><p id="status" role="status">데이터를 읽는 중…</p><small>드래그로 회전 · 휠로 확대 · 왼쪽에서 오른쪽으로 착지 시각을 가정한 재질 시연</small></main>
+<script type="module" src="./viewer.js"></script></html>
