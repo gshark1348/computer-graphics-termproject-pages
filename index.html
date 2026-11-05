@@ -4,7 +4,7 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#13191c;color:#ecf0ea;font:16px system-ui}main{max-width:1400px;margin:auto;padding:4vw}h1{font-size:clamp(24px,4vw,48px);margin:.4em 0}canvas{display:block;width:100%;background:#0b1014;touch-action:none}section{display:flex;flex-wrap:wrap;gap:.7em;align-items:center;margin:1em 0}button,select,input{font:inherit}button,select{padding:.45em;border-radius:5px}small{color:#a6beb7}
 </style>
-<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js"}}</script>
+
 <main><small>STEREO LAB / B</small><h1>스테레오 표면 렌더러</h1>
 <section><label>표시 <select id="mode"><option value="0">RGB 점</option><option value="1">표면 법선</option><option value="2">RGB splat</option><option selected value="3">조명 splat</option></select></label>
 <button id="play">일시정지</button><button id="reset">카메라 초기화</button>
@@ -21,4 +21,4 @@
 <label><input id="blend" type="checkbox"> 다중 패스 블렌딩</label>
 <label><input id="edl" type="checkbox"> 깊이 윤곽 (EDL)</label></section>
 <canvas></canvas><p id="status" role="status">데이터를 읽는 중…</p><small>드래그로 회전 · 휠로 확대 · 왼쪽에서 오른쪽으로 착지 시각을 가정한 재질 시연</small></main>
-<script type="module" src="./viewer.js"></script></html>
+<script defer src="./app.js"></script></html>
