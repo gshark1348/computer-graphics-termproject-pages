@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {cameraToViewer} from '../stereo_reconstruction/stream_client/read_points.mjs';
+import {cameraToViewer} from './read_points.mjs';
 
 const shotPath = `
   vec3 projectile(vec3 origin, vec3 targetPoint, float t) {
